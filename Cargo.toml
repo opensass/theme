@@ -22,6 +22,7 @@ web-sys = { version = "0.3.77", features = [
     "Document",
     "Window",
     "HtmlHeadElement",
+    "StorageEvent",
     "MediaQueryList",
 ]}
 gloo-timers = "0.3.0"
