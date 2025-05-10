@@ -27,9 +27,9 @@ pub struct ThemeContext {
 pub struct ThemeProviderProps {
     #[prop_or_default]
     pub children: Children,
-    #[prop_or(Theme::System)]
+    #[prop_or_default]
     pub default_theme: Theme,
-    #[prop_or(StorageType::LocalStorage)]
+    #[prop_or_default]
     pub storage_type: StorageType,
     #[prop_or(DEFAULT_STORAGE_KEY)]
     pub storage_name: &'static str,

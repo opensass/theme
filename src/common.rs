@@ -102,6 +102,18 @@ pub enum Theme {
     System,
     Custom(Rc<CustomTheme>),
 }
+impl std::str::FromStr for Theme {
+    type Err = ();
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "light" | "Light" => Ok(Theme::Light),
+            "dark" | "Dark" => Ok(Theme::Dark),
+            "system" | "System" => Ok(Theme::System),
+            _ => Err(()),
+        }
+    }
+}
 
 impl Theme {
     pub fn as_str(&self) -> String {
