@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::rc::Rc;
 
+#[cfg(target_arch = "wasm32")]
 pub(crate) const SYSTEM_THEME_QUERY: &str = "(prefers-color-scheme: dark)";
 pub(crate) const DEFAULT_STORAGE_KEY: &str = "theme";
 
