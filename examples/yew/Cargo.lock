@@ -961,7 +961,7 @@ dependencies = [
 
 [[package]]
 name = "theme"
-version = "0.0.2"
+version = "0.0.3"
 dependencies = [
  "serde",
  "web-sys",
@@ -1005,9 +1005,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.35.1"
+version = "1.45.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c89b4efa943be685f629b149f53829423f8f5531ea21249408e8e2f8671ec104"
+checksum = "2513ca694ef9ede0fb23fe71a4ee4107cb102b9dc1930f6d0fd77aae068ae165"
 dependencies = [
  "backtrace",
  "pin-project-lite",
