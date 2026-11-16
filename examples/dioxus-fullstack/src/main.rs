@@ -33,7 +33,6 @@ fn App() -> Element {
     }
 }
 
-
 #[component]
 fn ThemeToggle() -> Element {
     let theme_ctx = use_theme();
